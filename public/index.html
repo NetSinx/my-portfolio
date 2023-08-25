@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Orbitron:wght@900&family=Comfortaa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/aos.css">
+  <script src="https://kit.fontawesome.com/4505de1a69.js" crossorigin="anonymous"></script>
+  <title>My Portfolio</title>
+</head>
+<body>
+  <!-- Navbar Menu -->
+  <nav class="border-b-2 w-full bg-white dark:bg-black transition duration-300 ease-in-out dark:border-slate-600 sticky top-0 z-[999]">
+    <div class="sm:container sm:mx-auto flex flex-wrap justify-between lg:items-center py-2">
+      <a href="/" class="text-3xl ps-1 font-['Orbitron'] dark:text-white">Yasin A.H.</span></a>
+      <button id="hamburger-menu" class="lg:hidden">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul class="lg:flex lg:flex-row lg:w-auto lg:h-auto lg:overflow-visible lg:relative lg:top-0 font-semibold text-md duration-300 relative top-4 bottom-0 left-0 right-0 transition-all w-full overflow-hidden h-0">
+        <li class="lg:px-4 my-2"><a class="lg:hover-menu nav-menu mobile-menu lg:active-nav" href="#home">Home</a></li>
+        <li class="lg:px-4 my-2"><a class="lg:hover-menu nav-menu mobile-menu" href="#about">About</a></li>
+        <li class="lg:px-4 my-2"><a class="lg:hover-menu nav-menu mobile-menu" href="#skills">Skills</a></li>
+        <li class="lg:px-4 my-2"><a class="lg:hover-menu nav-menu mobile-menu" href="#project">Project</a></li>
+        <li class="lg:px-4 my-2"><a class="lg:hover-menu nav-menu mobile-menu" href="#contact">Contact</a></li>
+        <li class="lg:px-4 my-4 lg:my-2 flex justify-end">
+          <button id="dark-toggle" class="outline-none">
+            <img src="../src/images/moon.png" width="25">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="dark:bg-black transition duration-300 ease-in-out">
+    <div id="particles-js" class="absolute w-full lg:md:h-full h-[1050px] z-20"></div>
+    <div class="flex flex-col lg:flex-row container mx-auto items-center justify-evenly lg:text-start pt-8 pb-32 lg:h-screen relative">
+      <div class="lg:w-1/2 order-2 lg:order-none text-center z-20">
+        <h1 class="text-6xl font-bold dark:text-white">Hello, I am <div class="text-sky-600">Yasin Ayatulloh Hakim</div></h1>
+
+        <h2 class="text-3xl font-medium my-4 dark:text-white">Programmer | Web Developer</h2>
+        <div id="desc">
+          <p>This is my portfolio that explain about my self, my experience, my skills, etc.</p>
+        </div>
+        <p id="message" class="inline text-2xl font-mono dark:text-white"></p>
+        <div class="mt-10">
+          <a href="#" class="bg-sky-500 hover:bg-sky-600 duration-200 text-white px-8 py-4 rounded-md text-lg font-semibold font-['Comfortaa'] drop-shadow-[8px_10px_0_rgba(121,220,250,0.6)]">Hire Me</a>
+        </div>
+      </div>
+      <div class="w-80 h-80 order-1 lg:order-none bg-sky-500 rounded-xl overflow-clip rotate-12 hover:drop-shadow-[25px_25px_7px_rgba(109,196,255,1)] duration-300 drop-shadow-[15px_15px_0_rgba(121,220,250,0.6)] my-16 mx-auto z-20">
+        <img src="../src/images/yasin.png" class="relative bottom-14 right-2 -rotate-12">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="text-center bg-sky-300 dark:bg-sky-700 transition duration-300 ease-in-out pt-8 pb-16 overflow-clip">
+      <h1 class="border-b-4 border-blue-600 dark:border-sky-400 dark:text-white inline-block text-5xl font-medium font-[Acme]">
+        About Me
+      </h1>
+      <p class="w-10/12 mx-auto mt-8 text-xl font-[Poppins] dark:text-white">I am a programmer especially in the field of web programming. I always practice to become a reliable & professional web programmer. Step by step & problems that often arise in coding don't make me give up & give up on learning. And that's the motivation that got me excited about learning programming. The following is my experience and educational background.
+      </p>
+      <div class="flex justify-evenly flex-wrap">
+        <div class="card-education" data-aos="fade-right">
+          <i class="fa-solid fa-graduation-cap text-blue-500 text-4xl border-4 rounded-full px-4 py-5 border-blue-500"></i>
+          <h1 class="text-2xl font-medium my-4">Educational Background</h1>
+
+          <div class="flex flex-wrap ms-4">
+            <div class="flex-none mt-1">
+              <span class="line"></span>
+              <span class="line-2"></span>
+            </div>
+          
+            <div class="flex-1 mt-8 lg:mt-2 ms-4 text-start">
+              <h2 class="text-xl font-medium lg:mt-8">SMPN 35 Jakarta</h2>
+              <p class="">2017-2020</p>
+              <p class="text-slate-600 dark:text-slate-400">Has studied junior high school at SMP Negeri 35 Jakarta.
+              </p>
+              
+              <h2 class="text-xl font-medium mt-8">SMKN 22 Jakarta</h2>
+              <p class="">2020-2023</p>
+              <p class="text-slate-600 dark:text-slate-400">Has studied Vocational School at SMK Negeri 22 Jakarta.
+            </div>
+              
+            <div class="flex-1 text-start">
+              <span class="line-3"></span>
+
+              <h2 class="text-xl font-medium mt-2 ms-8">Muhammadiyah Prof. Dr. Hamka University</h2>
+              <p class="ms-8">2023</p>
+              <p class="text-slate-600 ms-8 dark:text-slate-400">Currently studying at Muhammadiyah University Prof. Dr. Hamka.
+            </div>
+          </div>
+        </div>
+
+        <div class="card-experience" data-aos="fade-left" data-aos-delay="500">
+          <i class="fa-solid fa-business-time text-blue-500 text-4xl border-4 transition duration-200 ease-in-out rounded-full px-4 py-5 border-blue-500"></i>
+          <h1 class="text-2xl font-medium mt-6 mb-8">Experience</h1>
+
+          <div class="flex">
+            <span class="line-4"></span>
+            <span class="line-5"></span>
+            <span class="line-6"></span>
+          </div>
+          
+          <div class="flex justify-evenly flex-col lg:flex-row text-start lg:text-center">
+            <div class="flex-1 px-2">
+              <p class="ms-2">2022</p>
+              <h2 class="text-xl font-medium ms-2">Tech Marketing at PT. Indonetwork</h2>
+              <p class="text-slate-600 ms-2 mb-4 dark:text-slate-400">Have experience in the field of marketing technology where marketing products or items with technology media such as
+              social media.
+              </p>
+            </div>
+
+            <div class="flex-1 px-2">
+              <p class="ms-2">2023</p>
+              <h2 class="text-xl font-medium ms-2">Network System Administration</h2>
+              <p class="text-slate-600 ms-2 mb-4 dark:text-slate-400">Have remote server experience owned by PT. Boer Technology, then install & configure the server remotely.
+            </div>
+              
+            <div class="flex-1 px-2">
+              <p class="ms-2">2023</p>
+              <h2 class="text-xl font-medium ms-2">Backend Developer / DevOps Engineer</h2>
+              <p class="text-slate-600 ms-2 dark:text-slate-400">I'm currently working in the github community on a backend developer with tasks of planning and building APIs,
+              stabilizing the performance of APIs & Web servers, etc.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="dark:bg-black dark:text-white transition duration-300 ease-in-out">
+    <div class="pt-16 pb-24">
+      <div class="text-center">
+        <h1 class="text-5xl font-[Acme] border-b-4 border-sky-500 inline">My Skills</h1>
+      </div>
+
+      <div class="flex flex-col lg:flex-row bg-white dark:bg-black transition duration-300 ease-in-out w-10/12 mx-auto rounded-xl border dark:border-slate-700 p-8 drop-shadow-xl shadow-lg mt-10" data-aos="fade-down" data-aos-offset="50">
+        <div class="flex-1 mx-4">
+          <h1 class="text-center text-3xl font-semibold font-['Comfortaa'] mb-4">Frontend</h1>
+
+          <div class="flex my-8">
+            <img src="../src/images/HTML5_logo.png" width="50">
+            <div class="flex flex-col ms-4 w-full">
+              <div class="flex justify-between">
+                <h2 class="font-medium text-lg mb-2 inline-block">HTML</h2>
+                <p class="text-lg">95%</p>
+              </div>
+              <div class="bg-slate-300 bar-html"></div>
+            </div>
+          </div>
+
+          <div class="flex my-8">
+            <img src="../src/images/css3-logo.png" width="50">
+            <div class="flex flex-col ms-4 w-full">
+              <div class="flex justify-between">
+                <h2 class="font-medium text-lg mb-2">CSS</h2>
+                <p class="text-lg">95%</p>
+              </div>
+              <div class="bg-slate-300 bar-css"></div>
+            </div>
+          </div>
+          
+          <div class="flex">
+            <img src="../src/images/js-logo.png" width="50">
+            <div class="flex flex-col ms-4 w-full">
+              <div class="flex justify-between">
+                <h2 class="font-medium text-lg mb-2">Javascript</h2>
+                <p class="text-lg">80%</p>
+              </div>
+              <div class="bg-slate-300 bar-js"></div>
+            </div>
+          </div>
+          
+          <div class="flex my-8">
+            <img src="../src/images/ts-logo.png" width="50">
+            <div class="flex flex-col ms-4 w-full">
+              <div class="flex justify-between">
+                <h2 class="font-medium text-lg mb-2">Typescript</h2>
+                <p class="text-lg">50%</p>
+              </div>
+              <div class="bg-slate-300 bar-ts"></div>
+            </div>
+          </div>
+          
+          <div class="flex my-8">
+            <img src="../src/images/angular-logo.png" width="50">
+            <div class="flex flex-col ms-4 w-full">
+              <div class="flex justify-between">
+                <h2 class="font-medium text-lg mb-2">Angular</h2>
+                <p class="text-lg">40%</p>
+              </div>
+              <div class="bg-slate-300 bar-angular"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-1">
+          <h1 class="text-3xl font-semibold text-center font-['Comfortaa'] mt-4 lg:mt-0">Backend</h1>
+
+          <div class="flex mt-8">
+            <img src="../src/images/go-logo.png" width="90">
+            <div class="flex flex-col w-full">
+              <div class="flex justify-between">
+                <h1 class="text-lg font-medium mb-2">Go</h1>
+                <p class="text-lg">85%</p>
+              </div>
+              <div class="bar-go"></div>
+            </div>
+          </div>
+          
+          <div class="flex ms-4">
+            <img src="../src/images/python-logo.png" width="50">
+            <div class="flex flex-col w-full ms-6">
+              <div class="flex justify-between">
+                <h1 class="text-lg font-medium mb-2">Python</h1>
+                <p class="text-lg">70%</p>
+              </div>
+              <div class="bar-python"></div>
+            </div>
+          </div>
+          
+          <div class="flex ms-3 mt-8">
+            <img src="../src/images/echo-logo.png" width="65">
+            <div class="flex flex-col w-full ms-3">
+              <div class="flex justify-between">
+                <h1 class="text-lg font-medium mb-2">Echo - Go Framework</h1>
+                <p class="text-lg">85%</p>
+              </div>
+              <div class="bar-echo"></div>
+            </div>
+          </div>
+          
+          <div class="flex ms-3 mt-8">
+            <img src="../src/images/nodejs-logo.png" width="60">
+            <div class="flex flex-col w-full ms-3">
+              <div class="flex justify-between">
+                <h1 class="text-lg font-medium mb-2">Node JS</h1>
+                <p class="text-lg">70%</p>
+              </div>
+              <div class="bar-node"></div>
+            </div>
+          </div>
+          
+          <div class="flex ms-3 mt-8">
+            <img src="../src/images/django-logo.png" width="60">
+            <div class="flex flex-col w-full ms-3">
+              <div class="flex justify-between">
+                <h1 class="text-lg font-medium mb-2">Django</h1>
+                <p class="text-lg">40%</p>
+              </div>
+              <div class="bar-django"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="project">
+    <div class="bg-[url('/src/images/pemandangan.jpg')] bg-cover bg-no-repeat bg-origin-border bg-center text-center">
+      <div class="bg-sky-600/60 w-full top-0 pt-8 pb-32">
+        <div class="container mx-auto">
+          <h1 class="text-5xl font-['Acme'] text-white border-b-4 pb-2 border-sky-300 inline-block relative z-10 mb-14">My Project</h1>
+
+          <div class="grid grid-flow-row auto-rows-max lg:grid-cols-3 gap-8">
+            <a href="https://github.com/NetSinx/go-restful-API" target="_blank" class="bg-white dark:bg-black dark:text-white transition duration-300 ease-in-out block rounded-xl drop-shadow-[0_0_8px_rgba(0,0,0,0.8)] relative z-10 pb-8 mt-4 overflow-clip card-project" data-aos="fade-down">
+              <div class="hover:bg-gray-200/[.4] absolute z-10 w-full h-full duration-300"></div>
+              <div class="overflow-clip">
+                <img src="../src/images/go-api.jpeg" class="rounded-t-xl duration-300">
+              </div>
+              <div class="px-4 mt-8">
+                <h1 class="text-3xl font-bold font-['Comfortaa']">Go RESTful API</h1>
+                <p class="text-lg mt-3 text-start text-slate-600 dark:text-slate-400">This is my simple project to learning about how to create a RESTful API with Go language.</p>
+              </div>
+            </a>
+            
+            <a href="https://github.com/NetSinx/yconnect-shop" target="_blank" class="bg-white dark:bg-black dark:text-white transition duration-300 ease-in-out block rounded-xl drop-shadow-[0_0_8px_rgba(0,0,0,0.8)] relative z-10 pb-8 mt-4 overflow-clip card-project" data-aos="fade-down" data-aos-delay="300">
+              <div class="hover:bg-gray-200/[.4] absolute z-10 w-full h-full duration-300"></div>
+              <div class="overflow-clip">
+                <img src="../src/images/angular+logo.png" class="rounded-t-xl duration-300">
+              </div>
+              <div class="px-4 mt-4">
+                <h1 class="text-3xl font-bold font-['Comfortaa']">Simple E-Commerce Website</h1>
+                <p class="text-lg mt-3 text-start text-slate-600 dark:text-slate-400">This is my simple E-Commerce website. This project is implement of that my learned, that is about how to create RESTful API & consume it with framework Angular that using Typescript language.</p>
+              </div>
+            </a>
+            
+            <a href="https://github.com/NetSinx/yconnect-news" target="_blank" class="bg-white dark:bg-black dark:text-white transition duration-300 ease-in-out block rounded-xl drop-shadow-[0_0_8px_rgba(0,0,0,0.8)] relative z-10 pb-8 mt-4 overflow-clip card-project" data-aos="fade-down" data-aos-delay="500">
+              <div class="hover:bg-gray-200/[.4] absolute z-10 w-full h-full duration-300"></div>
+              <div class="overflow-clip">
+                <img src="../src/images/laravel.png" class="rounded-t-xl duration-300">
+              </div>
+              <div class="px-4 mt-8">
+                <h1 class="text-3xl font-bold font-['Comfortaa']">Simple News Portal</h1>
+                <p class="text-lg mt-3 text-start text-slate-600 dark:text-slate-400">This is my simple news portal project that is a news portal demo application that created using php framework is Laravel</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="bg-white dark:bg-black dark:text-white pt-8 pb-32">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h1 class="text-5xl font-['Acme'] inline border-b-4 border-sky-600">Contact Me</h1>
+          <p class="mt-8 text-lg lg:text-xl font-['Poppins'] mb-10">Please contact me if anyone needs more information about me.</p>
+        </div>
+
+        <div class="grid lg:grid-flow-col lg:auto-cols-max justify-evenly grid-flow-row auto-rows-max gap-8">
+          <form action="" class="flex flex-col lg:w-[500px] md:w-[600px] w-full">
+            <label for="name" class="font-semibold text-lg mb-2">Your Name</label>
+            <input type="text" id="name" class="border-2 dark:bg-black border-slate-400 p-2 text-lg duration-200 focus:ring focus:outline-none focus:border-sky-500 focus:rounded-none" placeholder="Masukkan Nama Anda...">
+            
+            <label for="email" class="font-semibold text-lg mb-2 mt-4">Email Address</label>
+            <input type="email" id="email" class="border-2 dark:bg-black border-slate-400 p-2 text-lg duration-200 focus:ring focus:outline-none focus:border-sky-500 focus:rounded-none" placeholder="Masukkan Alamat Email Anda...">
+            
+            <label for="message" class="font-semibold text-lg mb-2 mt-4">Message</label>
+            <textarea rows="7" id="message" class="border-2 dark:bg-black border-slate-400 p-2 text-lg duration-200 focus:ring focus:outline-none focus:border-sky-500 focus:rounded-none resize-none" placeholder="Masukkan Pesan..."></textarea>
+
+            <div class="flex justify-end mt-4">
+              <button type="submit" class="bg-sky-500 py-2 px-4 text-lg text-white font-['Poppins'] hover:bg-sky-600 duration-200 rounded-lg block focus:outline-none focus:ring focus:bg-sky-400">Send <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </form>
+
+          <div class="grid gap-6 content-start">
+            <h1 class="text-lg font-semibold font-['Comfortaa']">Contact Info</h1>
+            <div class="bg-white dark:bg-black h-fit hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl drop-shadow-[0_4px_3px_rgba(0,0,0,0.3)] dark:drop-shadow-[0_4px_3px_rgba(98,98,98,0.8)] py-4 px-6">
+              <div class="flex">
+                <i class="fa-solid fa-location-dot text-4xl text-white bg-sky-500 rounded-full py-4 px-5"></i>
+                <div class="ms-4">
+                  <h1 class="text-xl font-bold font-['Comfortaa']">Address</h1>
+                  <p class="text-lg text-slate-600 dark:text-slate-400">Jl. Kayu Manis No.15</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white dark:bg-black h-fit hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl drop-shadow-[0_4px_3px_rgba(0,0,0,0.3)] dark:drop-shadow-[0_4px_3px_rgba(98,98,98,0.8)] py-4 px-6">
+              <div class="flex">
+                <i class="fa-solid fa-phone text-3xl text-white bg-sky-500 rounded-full p-5"></i>
+                <div class="ms-4">
+                  <h1 class="text-xl font-bold font-['Comfortaa']">Phone</h1>
+                  <p class="text-lg text-slate-600 dark:text-slate-400">+62-896-7679-8686</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white dark:bg-black h-fit hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl drop-shadow-[0_4px_3px_rgba(0,0,0,0.3)] dark:drop-shadow-[0_4px_3px_rgba(98,98,98,0.8)] py-4 px-6">
+              <div class="flex">
+                <i class="fa-solid fa-envelope text-3xl text-white bg-sky-500 rounded-full p-5"></i>
+                <div class="ms-4">
+                  <h1 class="text-xl font-bold font-['Comfortaa']">Email Address</h1>
+                  <p class="text-lg text-slate-600 dark:text-slate-400">yasin03ckm@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section id="footer">
+    <div class="bg-sky-600/90 pt-10 pb-2">
+      <h1 class="text-xl text-center text-white">Please follow & join my social media.</h1>
+      
+      <div class="text-center text-5xl text-white mt-6">
+        <a href="https://wa.me/6289676798686" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com/NetSinx" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/yasin.ayatullahhakim" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/yasin.a.h_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <h1 class="text-center text-white mt-10 font-['Poppins']">Copyright&copy;2023 by Yasin A.H.💖</h1>
+    </div>
+  </section>
+
+  <script src="../src/js/script.js" type="module"></script>
+  <script src="../src/js/particles.js"></script>
+  <script src="../src/js/aos.js"></script>
+</body>
+</html>

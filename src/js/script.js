@@ -1,5 +1,3 @@
-import Typed from './typed.js'
-
 const hamburger = document.getElementById('hamburger-menu')
 const navMenu = document.querySelector("ul")
 const linkMenu = document.querySelectorAll("a.nav-menu")

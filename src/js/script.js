@@ -81,7 +81,7 @@ linkMenu.forEach(link => {
           behavior: "smooth",
         });
       }
-    } else if (window.innerWidth < 768 && window.innerWidth >= 403) {
+    } else if (window.innerWidth < 768) {
       if (this.getAttribute("href") == "#home") {
         window.scrollTo({
           top: 0,

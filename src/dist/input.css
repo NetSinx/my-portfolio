@@ -255,5 +255,5 @@
 }
 
 .typed-cursor {
-  @apply text-2xl
+  @apply text-2xl dark:text-white
 }

@@ -1,4 +1,4 @@
-const hamburger = document.getElementById('hamburger-menu')
+const hamburger = document.querySelector('#hamburger-menu')
 const navMenu = document.querySelector("ul")
 const linkMenu = document.querySelectorAll("a.nav-menu")
 

@@ -19,8 +19,8 @@ document.addEventListener('click', (e) => {
 
 linkMenu.forEach(link => {
   link.addEventListener('click', function(e) {
-    e.preventDefault()
-    
+    e.preventDefault();
+
     const activeClass = document.getElementsByClassName("lg:active-nav");
 
     activeClass[0].className = activeClass[0].className.replace(" lg:active-nav", "")
@@ -28,6 +28,7 @@ linkMenu.forEach(link => {
 
     if (window.innerWidth >= 1024) {
       if (this.getAttribute("href") == "#home") {
+        console.log(window.scrollY);
         window.scrollTo({
           top: 0,
           behavior: "smooth",
@@ -80,7 +81,7 @@ linkMenu.forEach(link => {
           behavior: "smooth",
         });
       }
-    } else {
+    } else if (window.innerWidth < 768 && window.innerWidth >= 403) {
       if (this.getAttribute("href") == "#home") {
         window.scrollTo({
           top: 0,
@@ -93,17 +94,17 @@ linkMenu.forEach(link => {
         });
       } else if (this.getAttribute("href") == "#skills") {
         window.scrollTo({
-          top: 2990,
+          top: 3300,
           behavior: "smooth",
         });
       } else if (this.getAttribute("href") == "#project") {
         window.scrollTo({
-          top: 4290,
+          top: 4590,
           behavior: "smooth",
         });
       } else if (this.getAttribute("href") == "#contact") {
         window.scrollTo({
-          top: 5895,
+          top: 6205,
           behavior: "smooth",
         });
       }
@@ -227,12 +228,12 @@ darkToggle.addEventListener('click', function() {
   if (localStorage.theme === "light" || localStorage.key("theme") === null) {
     html.classList.add("dark")
     this.children[0].attributes[0].value = ""
-    this.children[0].attributes[0].value += "../src/images/sun.png"
+    this.children[0].attributes[0].value += "src/images/sun.png"
     localStorage.theme = "dark"
   } else {
     html.classList.remove("dark");
     this.children[0].attributes[0].value = "";
-    this.children[0].attributes[0].value += "../src/images/moon.png";
+    this.children[0].attributes[0].value += "src/images/moon.png";
     localStorage.theme = "light";
   }
 })
@@ -240,7 +241,7 @@ darkToggle.addEventListener('click', function() {
 if (localStorage.theme === "dark") {
   html.classList.add("dark")
   darkToggle.children[0].attributes[0].value = "";
-  darkToggle.children[0].attributes[0].value += "../src/images/sun.png";
+  darkToggle.children[0].attributes[0].value += "src/images/sun.png";
 } else {
   html.classList.remove("dark")
 }
